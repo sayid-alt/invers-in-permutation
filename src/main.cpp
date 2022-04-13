@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 void printArray(int arr[], int n);
 void random_array(int arr[], int n);
 void arr_permutation(int arr[], int size);
@@ -12,13 +11,10 @@ int factorial(int num);
 // Driver code
 int main(){
 	int size;
-	cout << "size: ";
-	cin >> size;
-	// build an array
+	cout << "size: "; cin >> size;
 	int arr[size];
 	// input element of array
 	input_element(arr, size);
-	// array
 	// Permutation and invers determining
 	sort(arr, arr + size);
 	printArray(arr, size);
@@ -39,7 +35,6 @@ int main(){
 		}
 		i++;
 	}
-
 	cout << "there is " << i << " loops of permutation" << endl;
 	return 0;
 }
